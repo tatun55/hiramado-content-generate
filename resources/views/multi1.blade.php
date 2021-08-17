@@ -39,7 +39,7 @@
         width: 4093px;
         font-size: 80px;
         font-family: "komorebi-gothic-P", sans-serif;
-        color: #333;
+        color: #444;
         position: relative;
     }
 
@@ -81,7 +81,7 @@
         font-size: 70px;
     }
 
-    .img {
+    .thumbnail {
         width: 250px;
         height: 250px;
         margin-right: 50px;
@@ -92,6 +92,9 @@
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
+        border: 3px solid #ddd;
+        padding: 16px;
+        background: #fff;
     }
 
     .msg-wrapper {
@@ -114,7 +117,7 @@
         <div class="wrapper">
             <div class="msg-wrapper mb {{ $flag ? "" : "ml" }}">
                 <div class="from">
-                    <div class="img">
+                    <div class="thumbnail">
                         <img src="{{ $thumbnail1 }}" alt="">
                     </div>
                     <div class="info">
@@ -128,7 +131,7 @@
             </div>
             <div class="msg-wrapper {{ $flag ? "ml" : "" }}">
                 <div class="from">
-                    <div class="img">
+                    <div class="thumbnail">
                         <img src="{{ $thumbnail2 }}" alt="">
                     </div>
                     <div class="info">

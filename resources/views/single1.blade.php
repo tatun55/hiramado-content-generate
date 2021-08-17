@@ -33,7 +33,7 @@
         width: 4093px;
         font-size: 90px;
         font-family: "komorebi-gothic-P", sans-serif;
-        color: #333;
+        color: #444;
         position: relative;
     }
 

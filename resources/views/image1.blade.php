@@ -14,8 +14,10 @@
     $bgs = glob(public_path('img/bg/*'),GLOB_BRACE);
     $bg = basename(\Arr::random($bgs));
     $img = basename(\Arr::random($bgs));
+
     $faker = \Faker\Factory::create('ja_JP');
-    $message1 = $faker->realText(rand(30,100), 3);
+    $message1 = $faker->realText(rand(30,100), 3
+    );
     $message2 = $faker->realText(rand(30,100), 3);
 
     $familyMemberProfile1 = \App\Models\FamilyMemberProfile::find(rand(1,4));
@@ -40,7 +42,7 @@
         width: 4093px;
         font-size: 80px;
         font-family: "komorebi-gothic-P", sans-serif;
-        color: #333;
+        color: #444;
         position: relative;
     }
 
@@ -74,17 +76,20 @@
         font-size: 70px;
     }
 
-    .img {
+    .thumbnail {
         width: 250px;
         height: 250px;
         margin-right: 50px;
     }
 
-    .img img {
+    .thumbnail img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
+        border: 3px solid #ddd;
+        padding: 16px;
+        background: #fff;
     }
 
     .msg-wrapper {
@@ -132,7 +137,7 @@
     </div>
     <div class="msg-wrapper">
         <div class="from">
-            <div class="img">
+            <div class="thumbnail">
                 <img src="{{ $thumbnail1 }}" alt="">
             </div>
             <div class="info">
