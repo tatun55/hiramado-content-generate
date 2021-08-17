@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'komorebi-gothic-P';
+    src: url("../fonts/komorebi-gothic-P.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'shirokuma';
+    src: url("{{public_path('font/001Shirokuma-Regular.otf')}}") format("opentype");
+}
+
+@font-face {
+    font-family: 'komorebi-gothic-P';
+    src: url("{{public_path('font/komorebi-gothic-P.ttf')}}") format("truetype");
+}
+
+@font-face {
+    font-family: 'timemachine-wa';
+    src: url("{{public_path('font/timemachine-wa.ttf')}}") format("truetype");
+}
+
+@font-face {
+    font-family: 'irohakakuC-Regular';
+    src: url("{{public_path('font/irohakakuC-Regular.ttf')}}") format("truetype");
+}
+
+@font-face {
+    font-family: 'irohakakuC-Light';
+    src: url("{{public_path('font/irohakakuC-Light.ttf')}}") format("truetype");
+}
+
+@font-face {
+    font-family: 'irohamaru-mikami-Light';
+    src: url("{{public_path('font/irohamaru-mikami-Light.ttf')}}") format("truetype");
+}
