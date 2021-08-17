@@ -6,18 +6,19 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
 use Tests\DuskTestCase;
 
-class ExampleTest extends DuskTestCase
+class BrowserShotTest extends DuskTestCase
 {
     /**
-     * A basic browser test example.
+     * A Dusk test example.
      *
      * @return void
      */
-    public function testBasicExample()
+    public function testExample()
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('/')
-                    ->assertSee('Laravel');
+            $browser->visit('test')
+                ->resize(4093, 2894)
+                ->screenshot(\Carbon\Carbon::now());
         });
     }
 }
